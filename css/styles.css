@@ -9,16 +9,6 @@ body {
         background-color: red;
     }
 
-/*     header {
-        width: 100%;
-        background-color: yellow;
-        margin: 0px auto;
-    }
-
-    nav{
-        width:1080px;
-        background-color: blue;
-    } */
 
 
 @media screen and (max-width:768px) {
