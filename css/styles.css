@@ -1,169 +1,18 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Oxygen', sans-serif;
+    padding: 0;
 }
 
 body {
-        background-color: red;
-    }
-
-
-
-@media screen and (max-width:768px) {
-
-    body {
-        background-color: white;
-        width: 768px;
-    }
-
-    body li a {
-        text-decoration: none;
-    }
-
-    header {
-        width: 100%;
-        background-color: whitesmoke;
-        margin: 0px auto;
-    }
-
-    nav {
-        background-color: whitesmoke;
-        width: 768px;
-    }
-
-    .contenedorheader {
-        max-width: 768px;
-        margin: 0 auto;
-        height: 80px;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .contenedorheader h1 {
-        margin: auto 0;
-    }
-
-
-    .imagenlogo img {
-        width: max-content;
-        height: 100%;
-    }
-
-
-    .nav-menu-list {
-        display: flex;
-        justify-content: space-between;
-        line-height: 80px;
-        width: 100%;
-    }
-
-    .nav-menu-item {
-        list-style-type: none;
-        margin: 0 20px;
-    }
-
-
-    main {
-        margin: 10px;
-    }
-
-
-    .fotoapertura {
-        width: 400px;
-        margin: 0 auto;
-        justify-content: center;
-    }
-
-    .fotoapertura img {
-        width: 100%;
-        height: auto;
-        margin: 30px auto;
-
-    }
-
-
-    .porfolio {
-        margin-top: 20px;
-        margin: 40px auto;
-        list-style-type: none;
-        gap: 10px;
-    }
-
-
-    .titulomain {
-        color: #001413;
-        display: flex;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .porfolio {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-    }
-
-    footer {
-        background-color: #001413;
-        width: 100%;
-    }
-
-    .copyright {
-        float: left;
-        color: #001413;
-        text-align: left;
-        margin: 5px 5px;
-        font-size: 12px;
-    }
-
-
-    .contenedorfooter h2,
-    p {
-        display: flex;
-        text-align: left;
-        color: whitesmoke;
-    }
-
-    .contenedorfooter {
-        margin: 0 auto;
-        padding: 20px;
-        justify-items: center;
-        gap: 15px;
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 1fr;
-        grid-template-areas: "colum1 colum2"
-    }
-
-
-    .colum1 {
-        width: 200px;
-    }
-
-    .contenedorfooter p {
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
-
-    .redes {
-        display: flex;
-        flex-direction: row;
-        padding: 10px;
-        gap: 15px;
-    }
-
-    .iconredes {
-        size: 10px;
-    }
-
-    .contenedorcopy {
-        margin-top: 20px;
-        text-align: center;
-    }
+    background-color: #f2f2f2;
 }
 
+h1 {
+transform: translate(40px, 5px);
+transition: 3s linear;
+}
+
+.fotoapertura{
+    transition: 3s linear;
+}

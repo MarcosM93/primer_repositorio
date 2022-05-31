@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/eaf501bf20.js" crossorigin="anonymous"></script>
     <title>Porfolio Marcos Mattos</title>
@@ -15,27 +16,40 @@
 
 <body>
     <header>
-        <div class="contenedorheader">
-            <h1>Fotografía</h1>
-            <nav>
-                <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
-                <ul class="nav-menu-list">
-                    <li class="nav-menu-item"><a href="index.html">Inicio</a></li>
-                    <li class="nav-menu-item"><a href="pages/porfolio.html">Porfolio</a></li>
-                    <li class="nav-menu-item"><a href="pages/prints.html">Prints</a></li>
-                    <li class="nav-menu-item"><a href="pages/bio.html">Bio</a></li>
-                    <li class="nav-menu-item"><a href="pages/contacto.html">Contacto</a></li>
+        <h1>Fotografía</h1>
+        <div class="contenedorheader container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="row">
+                <div class="col-md-6 collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="pages/porfolio.html">Porfolio</a>
+                        </li>
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="pages/prints.html">Prints</a></li>
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="pages/bio.html">Bio</a></li>
+                        <li class="nav-item navbar-brand"><a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                </div>
+            </div>
             </nav>
+
         </div>
     </header>
 
     <main>
-        <div class="fotoapertura">
-            <img src="./img/fotoapertura.jpg" alt="Imagen de apertura del sitio">
+        <div class="fotoapertura ">
+            <img src="./img/fotoapertura.jpg" class="img-fluid" alt="...">
         </div>
 
         <h2 class="titulomain">Porfolio</h2>
         <div class="porfolio">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
             <div class="porfolio-item1"><img src="./img/SHOWS.png" alt="">
                 <a href="./pages/shows.html"></a>
             </div>
@@ -55,7 +69,7 @@
         <div class="contenedorfooter">
             <div class="colum1">
                 <h2>Acerca de mí</h2>
-                <p>Breve párrafo que presenta una versión acortada de la Bio</p>
+                <p class="lead">Breve párrafo que presenta una versión acortada de la Bio</p>
             </div>
 
             <div class="colum2">
