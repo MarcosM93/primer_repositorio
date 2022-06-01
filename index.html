@@ -15,77 +15,84 @@
 </head>
 
 <body>
+
     <header>
-        <h1>Fotografía</h1>
-        <div class="contenedorheader container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <p class="text-center display-1">Fotografía</p>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
                 <div class="row">
-                <div class="col-md-6 collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="pages/porfolio.html">Porfolio</a>
-                        </li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="pages/prints.html">Prints</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="pages/bio.html">Bio</a></li>
-                        <li class="nav-item navbar-brand"><a class="nav-link" href="pages/contacto.html">Contacto</a>
-                        </li>
+                    <div class="col-md-6 collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link"
+                                    href="pages/porfolio.html">Porfolio</a>
+                            </li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="pages/prints.html">Prints</a>
+                            </li>
+                            <li class="nav-item navbar-brand"><a class="nav-link" href="pages/bio.html">Bio</a></li>
+                            <li class="nav-item navbar-brand"><a class="nav-link"
+                                    href="pages/contacto.html">Contacto</a>
+                            </li>
+                    </div>
                 </div>
-            </div>
             </nav>
 
         </div>
     </header>
 
     <main>
-        <div class="fotoapertura ">
-            <img src="./img/fotoapertura.jpg" class="img-fluid" alt="...">
-        </div>
-
-        <h2 class="titulomain">Porfolio</h2>
-        <div class="porfolio">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="container">
+            <!-- CARROUSEL DE APERTURA -->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/PHOTO_CAR_1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/PHOTO_CAR_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/PHOTO_CAR_3.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-              </div>
-            <div class="porfolio-item1"><img src="./img/SHOWS.png" alt="">
-                <a href="./pages/shows.html"></a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="porfolio-item2"><img src="./img/RETRATOS.png" alt="">
-                <a href="./pages/retratos.html"></a>
-            </div>
-            <div class="porfolio-item3"><img src="./img/DEPORTES.png" alt="">
-                <a href="./pages/deportes.html"></a>
-            </div>
-            <div class="porfolio-item4"><img src="./img/BODAS.png" alt="">
-                <a href="./pages/bodas.html"></a>
+
+            <h2 class="titulomain">Porfolio</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="container col-lg-4 col-md-6 -"><img src="./img/SHOWS.png" alt="">
+                        <a href="./pages/shows.html"></a>
+                    </div>
+                    <div class="container col-6 col-lg-12"><img src="./img/RETRATOS.png" alt="">
+                        <a href="./pages/retratos.html"></a>
+                    </div>
+                    <div class="container col-6 col-lg-12"><img src="./img/DEPORTES.png" alt="">
+                        <a href="./pages/deportes.html"></a>
+                    </div>
+                    <div class="container col-6 col-lg-12"><img src="./img/BODAS.png" alt="">
+                        <a href="./pages/bodas.html"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="contenedorfooter">
-            <div class="colum1">
-                <h2>Acerca de mí</h2>
-                <p class="lead">Breve párrafo que presenta una versión acortada de la Bio</p>
-            </div>
+               <div class="container">
+                   <div class="row bg-dark">
+<p class="h12 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sunt dolore provident soluta repellendus earum laboriosam officia voluptate dolorem molestias commodi, totam eius in! Officiis temporibus ab voluptatibus a, magnam architecto veritatis iste commodi laudantium alias delectus deleniti. Facere nam veniam sint odit obcaecati ipsa, optio, perspiciatis excepturi atque, nihil esse nulla vero minus aliquid possimus! Sed commodi laboriosam blanditiis. Quisquam asperiores voluptas veritatis eligendi eaque tempore soluta repellat earum. Officiis, maxime alias deserunt fuga vitae optio! Placeat recusandae ab debitis corporis, nam illo neque. Numquam optio cum repellendus id exercitationem, repellat asperiores laudantium laboriosam, laborum veritatis eveniet ipsa quod?</p>
 
-            <div class="colum2">
-                <h2>Redes</h2>
-                <div class="redes">
-                    <img class="iconredes" src="./icons/behance.png" alt="">
-                    <img class="iconredes" src="./icons/flickr.png" alt="">
-                    <img class="iconredes" src="./icons/instagram.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="pruebagit">
-            <h1>Esto es un apartado de prueba de commit</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptates.</p>
-        </div>
-        <div class="contenedorcopy">
+                   </div>
             &copy; Marcos Mattos 2022. Todos los derechos reservados.
         </div>
 
