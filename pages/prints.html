@@ -7,8 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Prints</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/eaf501bf20.js" crossorigin="anonymous"></script>
+    <title>Porfolio Marcos Mattos</title>
 </head>
 
 
@@ -16,76 +23,122 @@
 <body>
 
     <header>
-        <h1>Marcos Mattos | Fotógrafo</h1>
-        <img src="../img/logo Marcos Mattos.png" alt="">
-        <nav>
-            <ul class="navegacion">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./porfolio.html"</a>Porfolio</li>
-                <li><a href="#">Prints</a></li>
-                <li><a href="./bio.html">Bio</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h2 class="titulonav ml-50">MARCOS MATTOS | FOTÓGRAFO</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/bio.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Porfolio
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Bodas</a></li>
+                                <li><a class="dropdown-item" href="#">Retratos</a></li>
+                                <li><a class="dropdown-item" href="#">Deportes</a></li>
+                                <li><a class="dropdown-item" href="#">LiveMusic</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prints</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <div class="aperturaprints">
-            <img src="" alt="">
+    <main class="container">
+        <div class="aperturaprints d-flex flex-column text-center w-100 mh-20 p-3">
+            <img class="img-fluid" src="../img/BANNER PRINTS.png" alt="">
             <h1>Prints</h1>
             <p>¿Te gustaría tener alguna obra enmarcada? ¡Hacé el pedido del modelo que más te guste!</p>
         </div>
 
-        <!--  ESTO VA A SER UN SLIDER DE PRINTS -->
-        <section class="Prints-all">
-            <div class="Print 1"><img src="" alt="">
-                <h3>Titulo 1</h3>
-                <p>Detalles del print</p>
-                <a href="./contacto.html"></a>
-            </div>
+        <section class="prints-all d-flex flex-row justify-content-center">
 
-            <div class="Print 2">
-                <img src="" alt="">
-                <h3>Titulo 2</h3>
-                <p>Detalles del print</p>
-                <a href="./contacto.html"></a>
+            <article class="printscard">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Print 1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="./contacto.html" class="btn btn-outline-dark">¡Hacé tu pedido!</a>
+                </div>
             </div>
+        </article>
 
-            <div class="Print 3">
-                <img src="" alt="">
-                <h3>Titulo 3</h3>
-                <p>Detalles del print</p>
-                <a href="./contacto.html"></a>
-            </div>
+            <article class="printscard">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Print 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="./contacto.html" class="btn btn-outline-dark">¡Hacé tu pedido!</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="printscard">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Print 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="./contacto.html" class="btn btn-outline-dark">¡Hacé tu pedido!</a>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
-    <footer>
-        <div class="contenedorfooter">
-            <div class="colum1">
-                <h2 class="titulopie">Acerca de mí</h2>
-                <p>Breve párrafo que presenta una versión acortada de la Bio</p>
-            </div>
-
-            <div class="colum2">
-                <h2 class="titulopie">Redes</h2>
-                <div class="redes">
-                    <ul class="iconredes">
-                        <li><img src="../icons/instagram.png" alt=""></li>
-                        <li><img src="../icons/behance.png" alt=""></li>
-                        <li><img src="../icons/flickr.png" alt=""></li>
-                    </ul>
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <nav class="row">
+                <div class="col-md-6 col-xs-12 bg-dark">
+                    <h2>Acerca de mí</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et saepe sit exercitationem, ut fugiat
+                        officiis cupiditate. Impedit nam dignissimos quisquam.</p>
                 </div>
-            </div>
+                <div class="col-md-6 col-xs-12 bg-dark">
+                    <div class="iconredes d-flex justify-content-around">
+                        <a href=""><img src="./icons/instagram.png" alt=""></a>
+                        <a href=""><img src="./icons/instagram.png" alt=""></a>
+                        <a href=""><img src="./icons/instagram.png" alt=""></a>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div class="contenedorcopy">
-            <div class="footercopy">
-                &copy; Marcos Mattos 2022. Todos los derechos reservados.
-            </div>
+        <div class="conteiner-fluid text-center">
+            <p class="small">&copy; Marcos Mattos 2022. Todos los derechos reservados.</p>
         </div>
-
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

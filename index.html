@@ -7,94 +7,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/eaf501bf20.js" crossorigin="anonymous"></script>
     <title>Porfolio Marcos Mattos</title>
 </head>
 
-<body>
-
+<body class="bg-dark">
     <header>
-        <p class="text-center display-1">Fotografía</p>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h2 class="titulonav ml-50">MARCOS MATTOS | FOTÓGRAFO</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/bio.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Porfolio
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Bodas</a></li>
+                                <li><a class="dropdown-item" href="#">Retratos</a></li>
+                                <li><a class="dropdown-item" href="#">Deportes</a></li>
+                                <li><a class="dropdown-item" href="#">LiveMusic</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/prints.html">Prints</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<main class="bg-dark">
+    <section class="porfolioapertura">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/PHOTO_CAR_1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/PHOTO_CAR_2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/PHOTO_CAR_3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <div class="container porfolio">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 bg-dark "><img src="" alt="">
+                <a href="./pages/shows.html">SHOWS</a>
+            </div>
+            <div class="col-md-6 col-sm-12 bg-success"><img src="" alt="">
+                <a href="./pages/retratos.html">RETRATOS</a>
+            </div>
+            <div class="col-md-6 col-sm-12 bg-warning"><img src="" alt="">
+                <a href="./pages/deportes.html">DEPORTES</a>
+            </div>
+            <div class="col-md-6 col-sm-12 bg-danger"><img src="" alt="">
+                <a href="./pages/bodas.html">BODAS</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="prints container m-20px justify-content-around">
+        <div class="row">
+            <a class="col-xs-12 col-md-4" href=""><img src="" alt="">PRINT1</a>
+
+
+            <a class="col-xs-12 col-md-4" href=""><img src="" alt="">PRINT 2</a>
+
+
+            <a class="col-xs-12 col-md-4" href=""><img src="" alt="">PRINT 3</a>
+
+        </div>
+    </div>
+
+</main>
+
+    <footer class="bg-dark text-white">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                <div class="row">
-                    <div class="col-md-6 collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item navbar-brand"><a class="nav-link" href="index.html">Inicio</a></li>
-                            <li class="nav-item navbar-brand"><a class="nav-link"
-                                    href="pages/porfolio.html">Porfolio</a>
-                            </li>
-                            <li class="nav-item navbar-brand"><a class="nav-link" href="pages/prints.html">Prints</a>
-                            </li>
-                            <li class="nav-item navbar-brand"><a class="nav-link" href="pages/bio.html">Bio</a></li>
-                            <li class="nav-item navbar-brand"><a class="nav-link"
-                                    href="pages/contacto.html">Contacto</a>
-                            </li>
+            <nav class="row">
+                <div class="col-md-6 col-xs-12 bg-dark">
+                    <h2>Acerca de mí</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et saepe sit exercitationem, ut fugiat
+                        officiis cupiditate. Impedit nam dignissimos quisquam.</p>
+                </div>
+                <div class="col-md-6 col-xs-12 bg-dark">
+                    <div class="iconredes d-flex justify-content-around">
+                        <a href=""><img src="./icons/instagram.png" alt=""></a>
+                        <a href=""><img src="./icons/instagram.png" alt=""></a>
+                        <a href=""><img src="./icons/instagram.png" alt=""></a>
                     </div>
                 </div>
             </nav>
-
         </div>
-    </header>
-
-    <main class="container">
-            <!-- CARROUSEL DE APERTURA -->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/PHOTO_CAR_1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/PHOTO_CAR_2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/PHOTO_CAR_3.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <h2 class="titulomain">Porfolio</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="container col-md-6 col-sm-12 bg-dark"><img src="" alt="">
-                        <a href="./pages/shows.html"></a>
-                    </div>
-                    <div class="container col-md-6 col-sm-12 bg-success"><img src="" alt="">
-                        <a href="./pages/retratos.html"></a>
-                    </div>
-                    <div class="container col-md-6 col-sm-12 bg-warning"><img src="" alt="">
-                        <a href="./pages/deportes.html"></a>
-                    </div>
-                    <div class="container col-md-6 col-sm-12 bg-danger"><img src="" alt="">
-                        <a href="./pages/bodas.html"></a>
-                    </div>
-                </div>
-            </div>
-    </main>
-
-    <footer>
-               <div class="container">
-                   <div class="row bg-dark pd-20">
-<p class="h12 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit sunt dolore provident soluta repellendus earum laboriosam officia voluptate dolorem molestias commodi, totam eius in! Officiis temporibus ab voluptatibus a, magnam architecto veritatis iste commodi laudantium alias delectus deleniti. Facere nam veniam sint odit obcaecati ipsa, optio, perspiciatis excepturi atque, nihil esse nulla vero minus aliquid possimus! Sed commodi laboriosam blanditiis. Quisquam asperiores voluptas veritatis eligendi eaque tempore soluta repellat earum. Officiis, maxime alias deserunt fuga vitae optio! Placeat recusandae ab debitis corporis, nam illo neque. Numquam optio cum repellendus id exercitationem, repellat asperiores laudantium laboriosam, laborum veritatis eveniet ipsa quod?</p>
-
-                   </div>
-            &copy; Marcos Mattos 2022. Todos los derechos reservados.
+        <div class="conteiner-fluid text-center">
+            <p class="small">&copy; Marcos Mattos 2022. Todos los derechos reservados.</p>
         </div>
-
     </footer>
+    </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
