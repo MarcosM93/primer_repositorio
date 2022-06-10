@@ -1,6 +1,18 @@
-body {
-  background: #f2f2f2; }
+.porfolio .porfoliocard {
+  display: flex;
+  justify-content: center; }
 
-.mainbio {
-  background-color: yellow;
-  margin: 100px 200px; }
+div .prints {
+  width: 100%; }
+  div .prints .contenedorprints {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.contenedorprints {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.footercopy {
+  background-color: yellow; }
