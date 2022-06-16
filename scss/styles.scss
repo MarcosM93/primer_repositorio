@@ -1,3 +1,7 @@
+@import "variables";
+@import "mixins";
+
+
 .porfolio {
 
     .porfoliocard {
@@ -10,19 +14,37 @@
 div .prints {
     width: 100%;
 
-    .contenedorprints{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-}
-
     .contenedorprints {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
     }
+}
+
+.contenedorprints {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .footercopy {
-    background-color: yellow;
+    background-color: $color-clown;
+}
+
+.pruebamaps {
+
+    .caja {      
+ @include cuadrado;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                text-decoration: none;
+                color: $color-dark !important; 
+            }
+        }
+
+        ;
+    }
 }
