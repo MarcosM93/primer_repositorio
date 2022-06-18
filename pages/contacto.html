@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="desciption" content="Página de contacto de Marcos Mattos, fotógrafo documental argentino residente en Córdoba. Si estás interesado/a en alguna cobertura, ¡deja tus datos para comunicarte!">
-    <meta name="keywords" content="retratos, shows, deportes, bodas, fotografía, fotografía documental, fotógrafo documental, fotógrafo argentino, coberturas, narrativa fotográfica">
+    <meta name="desciption" content="Bio personal y trayectoria profesional de Marcos Mattos, fotógrafo documental argentino residente en Córdoba">
+    <meta name="keywords" content="fotografía, bio, fotógrafo documental, fotógrafo argentino, patrimonio cultural inmaterial, muestras, exhibiciones">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>¡Contactame!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/eaf501bf20.js" crossorigin="anonymous"></script>
+    <title>Bio Marcos Mattos</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Fotografía</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h2 class="titulonav ml-50">MARCOS MATTOS | FOTÓGRAFO</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./porfolio.html">Porfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./prints.html">Prints</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./bio.html">Bio</a>
-                  </li>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/bio.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Porfolio
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Bodas</a></li>
+                            <li><a class="dropdown-item" href="#">Retratos</a></li>
+                            <li><a class="dropdown-item" href="#">Deportes</a></li>
+                            <li><a class="dropdown-item" href="#">LiveMusic</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prints</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-    </header>
-
+        </div>
+    </nav>
+</header>
 <main>
 
 <div class="container vh-50 mg-20">
@@ -60,11 +83,11 @@
 
 
     <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <label for="exampleFormControlInput1" class="form-label">Insertá tu correo</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Dejá algunos datos de referencia del evento</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 </main>
