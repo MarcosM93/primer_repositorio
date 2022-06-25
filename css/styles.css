@@ -1,28 +1,126 @@
-.porfolio .porfoliocard {
-  display: flex;
-  justify-content: center; }
-
-div .prints {
-  width: 100%; }
-  div .prints .contenedorprints {
-    display: flex;
-    flex-direction: column;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+  html header .titulonav,
+  body header .titulonav {
+    color: #ffde59;
+    font-size: x-large; }
+  html main .porfoliocards,
+  body main .porfoliocards {
+    margin: 50px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+    @media screen and (min-width: 768px) {
+      html main .porfoliocards,
+      body main .porfoliocards {
+        margin: 50px 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px; } }
+  html main .tarjeta,
+  body main .tarjeta {
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    color: white;
+    background-color: yellow;
+    margin: 0 auto;
     justify-content: center; }
-
-.contenedorprints {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.footercopy {
-  background-color: yellow; }
-
-.pruebamaps {
-  background-color: #262626; }
-  .pruebamaps .caja {
-    border: orange 1px solid; }
-    .pruebamaps .caja ul {
-      list-style-type: none; }
-      .pruebamaps .caja ul li {
-        text-decoration: none;
-        color: #262626; }
+    html main .tarjeta a,
+    body main .tarjeta a {
+      text-decoration: none; }
+  html main .contenedor-cards,
+  body main .contenedor-cards {
+    width: 50%;
+    max-width: 1200px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center; }
+    html main .contenedor-cards .card,
+    body main .contenedor-cards .card {
+      width: 330px;
+      height: 300px;
+      border-radius: 2px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin: 20px;
+      text-align: center;
+      transition: all 0.25s; }
+      html main .contenedor-cards .card :hover,
+      body main .contenedor-cards .card :hover {
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+      html main .contenedor-cards .card img,
+      body main .contenedor-cards .card img {
+        width: 330px;
+        height: 220px; }
+      html main .contenedor-cards .card h4,
+      body main .contenedor-cards .card h4 {
+        font-weight: 600;
+        font-size: 16px;
+        font-weight: 300; }
+      html main .contenedor-cards .card p,
+      body main .contenedor-cards .card p {
+        padding: 0 1rem; }
+  html main .main-contacto,
+  body main .main-contacto {
+    font-family: 'Montserrat', sans-serif;
+    background-color: yellow; }
+  html main .contenedor-bio-all,
+  body main .contenedor-bio-all {
+    background-color: #ffde59 !important; }
+    html main .contenedor-bio-all .contenedor-bio h2 p,
+    body main .contenedor-bio-all .contenedor-bio h2 p {
+      color: #ffde59;
+      font-style: italic; }
+  html footer,
+  body footer {
+    font-family: 'Montserrat', sans-serif !important;
+    width: 100%;
+    height: 200px;
+    background-color: #262626;
+    margin-top: auto;
+    bottom: 0; }
+    html footer .footer-all,
+    body footer .footer-all {
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px; }
+      html footer .footer-all h2,
+      body footer .footer-all h2 {
+        font-size: 14px;
+        text-align: center;
+        color: white;
+        padding: 10px; }
+      html footer .footer-all .contenedor-redes,
+      body footer .footer-all .contenedor-redes {
+        display: flex;
+        justify-content: space-around; }
+        html footer .footer-all .contenedor-redes .icon-redes,
+        body footer .footer-all .contenedor-redes .icon-redes {
+          color: #ffde59;
+          height: 20px;
+          width: 20px; }
+      @media screen and (min-width: 768px) {
+        html footer .footer-all h2,
+        body footer .footer-all h2 {
+          font-size: 32px;
+          text-align: center;
+          color: white; }
+          html footer .footer-all h2 .contenedor-redes,
+          body footer .footer-all h2 .contenedor-redes {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around; } }
