@@ -1,15 +1,21 @@
+@import 'variables'; 
+
 html,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-type;
 
 
     header {
         .titulonav {
-            color: #ffde59;
+            color: $colores ('primary');
             font-size: x-large;
+        }
+
+        .span.navbar-toggler-icon {
+            color: $colores ('secondary');
         }
     }
 
@@ -88,19 +94,19 @@ body {
             }
         }
 
-        .main-contacto {
+        .contenedor-contacto {
             font-family: 'Montserrat', sans-serif;
             background-color: yellow;
         }
 
         .contenedor-bio-all {
-            background-color: #ffde59 !important;
+            background-color: $colores('secondary');
 
             .contenedor-bio {
 
                 h2 p {
-                    color: #ffde59;
-                    font-style: italic;
+                    color: $colores('secondary');
+                    font-style: $font-type;
                 }
             }
         }
@@ -108,10 +114,10 @@ body {
     }
 
     footer {
-        font-family: 'Montserrat', sans-serif !important;
+        font-family: $font-type !important;
         width: 100%;
         height: 200px;
-        background-color: #262626;
+        background-color: red;
         margin-top: auto;
         bottom: 0;
 

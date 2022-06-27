@@ -72,8 +72,8 @@ body {
       html main .contenedor-cards .card p,
       body main .contenedor-cards .card p {
         padding: 0 1rem; }
-  html main .main-contacto,
-  body main .main-contacto {
+  html main .contenedor-contacto,
+  body main .contenedor-contacto {
     font-family: 'Montserrat', sans-serif;
     background-color: yellow; }
   html main .contenedor-bio-all,
