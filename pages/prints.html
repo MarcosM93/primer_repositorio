@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://kit.fontawesome.com/eaf501bf20.js" crossorigin="anonymous"></script>
     <title>Porfolio Marcos Mattos</title>
 </head>
@@ -19,10 +19,10 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark w-100">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <h2 class="titulonav ml-50">MARCOS MATTOS | FOTÓGRAFO</h1>
+                    <h1 class="titulonav">MARCOS MATTOS FOTÓGRAFO</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -32,31 +32,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/bio.html">Sobre mí</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Porfolio
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Bodas</a></li>
-                                <li><a class="dropdown-item" href="#">Retratos</a></li>
-                                <li><a class="dropdown-item" href="#">Deportes</a></li>
-                                <li><a class="dropdown-item" href="#">LiveMusic</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/porfolio.html">Porfolio</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Prints</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Prints</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -65,14 +52,14 @@
     </header>
 
     <main>
-        <div class="contenedor-cards mx-auto">
-            <h2>Prints</h2>
-            <p>¿Te gustaría tener alguna obra enmarcada? ¡Hacé el pedido del modelo que más te guste!</p>
-        </div>
+        <div class="contenedor-prints-all container">
+            <div class="row">
+            <h2 class="col-lg-12 text-center mt-50">Decorá tus ambientes con obra fotográfica</h2>
+            <p class="col-lg-12 text-center">¿Te gustaría tener alguna foto enmarcada? ¡Hacé el pedido del modelo que más te guste!</p>
 
-        <div class="contenedorprints d-flex justify-content-around gap-5 bg-success">
-            <article id="PRINTS" class="col-md-6 col-lg-4 col-xxl-3">
-                <div class="card text-center bg-light text-dark h-100 ">
+        <div class="contenedor-prints d-flex justify-content-around">
+<!--             <div class="row gap-3">
+                <div class="card text-center col-md-4 col-xs-12">
                     <h3 class="card-header">PRINT 1</h3>
                     <img src="../img/PRINT.png" alt="ENMARCACIÓN" data-bs-toggle="prints" data-bs-target="">
                     <div class="card-body">
@@ -80,27 +67,12 @@
                         <p class="lead precio">$2000</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-info btn-lg">¡Hacé tu pedido!</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5s3QCz8NYElx2ATj0cpJ-Di6hXQ9W64HYX221CYTjzMc2Vg/viewform" class="btn btn-info btn-lg">¡Hacé tu pedido!</a>
                     </div>
-                </div>
-            </article>
+                </div> -->
 
-            <article id="PRINTS" class="col-md-6 col-lg-4 col-xxl-3">
-                <div class="card text-center bg-light text-dark h-100 ">
-                    <h3 class="card-header">PRINT 2</h3>
-                    <img src="../img/PRINT.png" alt="ENMARCACIÓN" data-bs-toggle="prints" data-bs-target="">
-                    <div class="card-body">
-                        <p class="card-text">Impresión fine art enmarcada</p>
-                        <p class="lead precio">$4000</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn btn-info btn-lg">¡Hacé tu pedido!</a>
-                    </div>
-                </div>
-            </article>
 
-            <article id="remera" class="col-md-6 col-lg-4 col-xxl-3">
-                <div class="card text-center bg-light text-dark h-100 ">
+                <div class="card text-center">
                     <h3 class="card-header">PRINT 3</h3>
                     <img src="../img/PRINT.png" alt="ENMARCACIÓN" data-bs-toggle="prints" data-bs-target="">
                     <div class="card-body">
@@ -108,21 +80,21 @@
                         <p class="lead precio">$5000</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-info btn-lg">¡Hacé tu pedido!</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5s3QCz8NYElx2ATj0cpJ-Di6hXQ9W64HYX221CYTjzMc2Vg/viewform" class="btn btn-info btn-lg">¡Hacé tu pedido!</a>
                     </div>
                 </div>
-            </article>
+            </div>
         </div>
+    </div>
     </main>
 
     <footer>
         <div class="footer-all">
             <div class="contenedor-footer">
-                <h1>Redes</h1>
+                <h2>Redes</h2>
                 <div class="contenedor-redes">
-                    <img class="icon-redes" src="./icons/behance.png" alt="">
-                    <img class="icon-redes" src="./icons/flickr.png" alt="">
-                    <img class="icon-redes" src="./icons/instagram.png" alt="">
+                    <a href="https://www.instagram.com/marcosumattos/" class="icon-redes"><i class="fa-brands fa-2xl fa-instagram"></i></a>
+                    <a href="https://www.flickr.com/photos/marcosumattos/" class="icon-redes"><i class="fa-brands fa-2xl fa-flickr"></i></a>
                 </div>
             </div>
         </div>

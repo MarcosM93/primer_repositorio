@@ -1,14 +1,11 @@
 //colores
-$colores: (primary-dark:#262626, primary-light:#f2f2f2, secondary: #ffb703, secondary-dark: darken (#ffb703, 10%), secondary-light: lighten (#ffb703, 40%));
+$primary-dark: #1D1D1D;
+$primary-light: #E9E6FF;
+$secondary: #FC9F5B;
+$secondary-grey: #E9EBF8; 
 
-//fuentes
-$font-type:'Montserrat', sans-serif;
-
-//dimensiones
-$desktop: 992px;
-$mobile: 576px;
-$padding: 15px;
-$radius: 15px;
+//tipografía
+$font-type: 'Montserrat', sans-serif;
 
 //sombreado
-$shadow: 0 10px 30px rgba(0, 0, 0, .4);
+$shadow:0 10px 30px rgba(0, 0, 0, .4);
