@@ -19,11 +19,18 @@ body {
   body main .slider {
     max-width: 800px;
     height: auto;
-    margin: 50px auto; }
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1D1D1D;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); }
     html main .slider h1,
     body main .slider h1 {
-      margin-bottom: 50px;
-      text-align: center; }
+      font-style: italic;
+      font-size: x-large;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #E9EBF8; }
   html main .porfoliocards,
   body main .porfoliocards {
     margin: 50px 10px;
@@ -32,11 +39,16 @@ body {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 20px; }
-    html main .porfoliocards .card1, html main .porfoliocards .card2, html main .porfoliocards .card3, html main .porfoliocards .card4,
+    html main .porfoliocards .card1,
+    html main .porfoliocards .card2,
+    html main .porfoliocards .card3,
+    html main .porfoliocards .card4,
     body main .porfoliocards .card1,
     body main .porfoliocards .card2,
     body main .porfoliocards .card3,
     body main .porfoliocards .card4 {
+      border: 3px solid #1D1D1D;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -145,85 +157,169 @@ body {
       width: 100px; }
   html main .contenedor-bio-all,
   body main .contenedor-bio-all {
-    width: 100%;
-    background-color: #E9E6FF;
-    margin: auto 200px;
-    display: inline; }
-  html main img,
-  body main img {
-    margin: auto 0;
-    width: 700px;
-    height: auto;
-    border-radius: 10px; }
-  html main .contenedor-bio,
-  body main .contenedor-bio {
-    display: flex; }
-    html main .contenedor-bio .biografia,
-    body main .contenedor-bio .biografia {
-      width: 400px;
-      padding: 50px;
-      text-align: left; }
-      html main .contenedor-bio .biografia h2 p,
-      body main .contenedor-bio .biografia h2 p {
-        color: #FC9F5B;
-        font-style: "Montserrat", sans-serif; }
-    html main .contenedor-bio .publicaciones,
-    body main .contenedor-bio .publicaciones {
-      width: 300px;
-      padding: 50px;
-      text-align: left; }
-      html main .contenedor-bio .publicaciones h2 p,
-      body main .contenedor-bio .publicaciones h2 p {
-        color: #FC9F5B;
-        font-style: "Montserrat", sans-serif; }
-
-footer {
-  background-color: #1D1D1D;
-  font-family: "Montserrat", sans-serif;
-  padding-top: 3px solid #FC9F5B;
-  width: 100%;
-  height: 120px;
-  margin-top: auto;
-  bottom: 0; }
-  @media screen and (min-width: 768px) {
-    footer {
-      background-color: #1D1D1D;
-      font-family: "Montserrat", sans-serif;
-      width: 100%;
-      border: 2px solid #FC9F5B;
-      height: 200px;
-      margin-top: 0;
-      bottom: 0; } }
-  footer .footer-all {
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-    footer .footer-all h2 {
-      font-size: 32px;
-      text-align: center;
-      color: white;
-      padding: 10px; }
-    footer .footer-all .contenedor-redes {
+    margin: 30px auto 20px auto;
+    width: 300px;
+    max-width: 350px;
+    background-color: #1D1D1D;
+    border: 3px #FC9F5B solid;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); }
+    html main .contenedor-bio-all img,
+    body main .contenedor-bio-all img {
+      padding-top: 50px;
+      margin: 0 auto;
+      max-width: 200px;
+      height: auto; }
+    html main .contenedor-bio-all .contenedor-bio,
+    body main .contenedor-bio-all .contenedor-bio {
+      margin: 0 auto;
       display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-      footer .footer-all .contenedor-redes .icon-redes {
-        color: #E9E6FF;
-        height: 20px;
-        width: 20px; }
-      @media screen and (min-width: 768px) {
-        footer .footer-all .contenedor-redes h2 {
-          font-size: 14px;
+      flex-direction: column;
+      padding: 20px; }
+      html main .contenedor-bio-all .contenedor-bio .biografia,
+      body main .contenedor-bio-all .contenedor-bio .biografia {
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 300px; }
+        html main .contenedor-bio-all .contenedor-bio .biografia h2,
+        body main .contenedor-bio-all .contenedor-bio .biografia h2 {
           text-align: center;
+          font-size: larger;
+          color: #FC9F5B; }
+        html main .contenedor-bio-all .contenedor-bio .biografia p,
+        body main .contenedor-bio-all .contenedor-bio .biografia p {
+          width: 220px;
+          text-align: justify;
+          font-size: small;
           color: #E9E6FF; }
-        footer .footer-all .contenedor-redes .contenedor-redes {
-          flex-direction: column;
-          justify-content: center; }
-          footer .footer-all .contenedor-redes .contenedor-redes .icon-redes {
-            color: #FC9F5B;
-            height: 20px;
-            width: 20px; }
-            footer .footer-all .contenedor-redes .contenedor-redes .icon-redes:hover {
+      html main .contenedor-bio-all .contenedor-bio .publicaciones,
+      body main .contenedor-bio-all .contenedor-bio .publicaciones {
+        width: 220px;
+        margin: 0 auto;
+        max-width: 200px; }
+        html main .contenedor-bio-all .contenedor-bio .publicaciones h2,
+        body main .contenedor-bio-all .contenedor-bio .publicaciones h2 {
+          text-align: center;
+          font-size: larger;
+          color: #FC9F5B; }
+        html main .contenedor-bio-all .contenedor-bio .publicaciones ul,
+        body main .contenedor-bio-all .contenedor-bio .publicaciones ul {
+          text-align: center;
+          font-size: small;
+          color: #E9E6FF;
+          list-style-type: none; }
+          html main .contenedor-bio-all .contenedor-bio .publicaciones ul li,
+          body main .contenedor-bio-all .contenedor-bio .publicaciones ul li {
+            font-style: italic;
+            gap: 10px; }
+            html main .contenedor-bio-all .contenedor-bio .publicaciones ul li span,
+            body main .contenedor-bio-all .contenedor-bio .publicaciones ul li span {
+              color: #FC9F5B; }
+    @media screen and (min-width: 568px) {
+      html main .contenedor-bio-all,
+      body main .contenedor-bio-all {
+        margin: 30px auto 20px auto;
+        width: auto;
+        max-width: 800px;
+        height: auto; }
+        html main .contenedor-bio-all .contenedor-bio,
+        body main .contenedor-bio-all .contenedor-bio {
+          width: 100%; }
+          html main .contenedor-bio-all .contenedor-bio .biografia,
+          body main .contenedor-bio-all .contenedor-bio .biografia {
+            justify-content: center;
+            width: auto;
+            max-width: 600px; }
+            html main .contenedor-bio-all .contenedor-bio .biografia h2,
+            body main .contenedor-bio-all .contenedor-bio .biografia h2 {
+              text-align: center;
+              font-size: larger;
+              color: #FC9F5B; }
+            html main .contenedor-bio-all .contenedor-bio .biografia p,
+            body main .contenedor-bio-all .contenedor-bio .biografia p {
+              margin: 0 auto;
+              width: auto;
+              text-align: justify;
+              font-size: small;
+              color: #E9E6FF; }
+          html main .contenedor-bio-all .contenedor-bio .publicaciones,
+          body main .contenedor-bio-all .contenedor-bio .publicaciones {
+            width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            max-width: 550px; }
+            html main .contenedor-bio-all .contenedor-bio .publicaciones h2,
+            body main .contenedor-bio-all .contenedor-bio .publicaciones h2 {
+              text-align: center;
+              font-size: larger;
+              color: #FC9F5B; }
+            html main .contenedor-bio-all .contenedor-bio .publicaciones ul,
+            body main .contenedor-bio-all .contenedor-bio .publicaciones ul {
+              text-align: center;
+              font-size: small;
+              color: #E9E6FF;
+              list-style-type: none;
+              padding-left: 0; }
+              html main .contenedor-bio-all .contenedor-bio .publicaciones ul li,
+              body main .contenedor-bio-all .contenedor-bio .publicaciones ul li {
+                font-style: italic;
+                gap: 10px; }
+                html main .contenedor-bio-all .contenedor-bio .publicaciones ul li span,
+                body main .contenedor-bio-all .contenedor-bio .publicaciones ul li span {
+                  color: #FC9F5B; } }
+  html footer,
+  body footer {
+    background-color: #1D1D1D;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 3px solid #FC9F5B;
+    width: 100%;
+    height: 120px;
+    margin-top: auto;
+    bottom: 0; }
+    @media screen and (min-width: 768px) {
+      html footer,
+      body footer {
+        height: 200px;
+        margin-top: 0; } }
+    html footer .footer-all,
+    body footer .footer-all {
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      html footer .footer-all h2,
+      body footer .footer-all h2 {
+        font-size: 32px;
+        text-align: center;
+        color: #E9EBF8;
+        padding: 10px; }
+      html footer .footer-all .contenedor-redes,
+      body footer .footer-all .contenedor-redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        html footer .footer-all .contenedor-redes .icon-redes,
+        body footer .footer-all .contenedor-redes .icon-redes {
+          color: #E9E6FF;
+          height: 20px;
+          width: 20px; }
+        @media screen and (min-width: 768px) {
+          html footer .footer-all .contenedor-redes h2,
+          body footer .footer-all .contenedor-redes h2 {
+            font-size: 14px;
+            text-align: center;
+            color: #E9E6FF; }
+          html footer .footer-all .contenedor-redes .contenedor-redes,
+          body footer .footer-all .contenedor-redes .contenedor-redes {
+            flex-direction: column;
+            justify-content: center; }
+            html footer .footer-all .contenedor-redes .contenedor-redes .icon-redes,
+            body footer .footer-all .contenedor-redes .contenedor-redes .icon-redes {
               color: #FC9F5B;
-              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); } }
+              height: 20px;
+              width: 20px; }
+              html footer .footer-all .contenedor-redes .contenedor-redes .icon-redes:hover,
+              body footer .footer-all .contenedor-redes .contenedor-redes .icon-redes:hover {
+                color: #FC9F5B;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); } }

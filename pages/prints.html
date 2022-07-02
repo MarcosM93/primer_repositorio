@@ -19,31 +19,29 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark nav-all">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <h1 class="titulonav">MARCOS MATTOS FOTÓGRAFO</h1>
-                </a>
+                <a class="navbar-brand titulonav" href="#">MARCOS MATTOS FOTÓGRAFO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/bio.html">Sobre mí</a>
+                            <a class="nav-link" href="./bio.html">Sobre mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/porfolio.html">Porfolio</a>
+                            <a class="nav-link" href="./porfolio.html">Porfolio</a>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Prints</a>
+                            <a class="nav-link" href="#">Prints</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -52,14 +50,14 @@
     </header>
 
     <main>
-        <div class="contenedor-prints-all container">
-            <div class="row">
-            <h2 class="col-lg-12 text-center mt-50">Decorá tus ambientes con obra fotográfica</h2>
-            <p class="col-lg-12 text-center">¿Te gustaría tener alguna foto enmarcada? ¡Hacé el pedido del modelo que más te guste!</p>
+        <div class="container">
+            <div class="contenedor-prints-all">
+            <h2>Decorá tus ambientes con obra fotográfica</h2>
+            <p">¿Te gustaría tener alguna foto enmarcada? ¡Hacé el pedido del modelo que más te guste!</p>
 
-        <div class="contenedor-prints d-flex justify-content-around">
-<!--             <div class="row gap-3">
-                <div class="card text-center col-md-4 col-xs-12">
+        <div class="contenedor-prints">
+          <div>
+                <div">
                     <h3 class="card-header">PRINT 1</h3>
                     <img src="../img/PRINT.png" alt="ENMARCACIÓN" data-bs-toggle="prints" data-bs-target="">
                     <div class="card-body">
@@ -69,12 +67,12 @@
                     <div class="card-footer">
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5s3QCz8NYElx2ATj0cpJ-Di6hXQ9W64HYX221CYTjzMc2Vg/viewform" class="btn btn-info btn-lg">¡Hacé tu pedido!</a>
                     </div>
-                </div> -->
+                </div>
 
 
-                <div class="card text-center">
+                <div">
                     <h3 class="card-header">PRINT 3</h3>
-                    <img src="../img/PRINT.png" alt="ENMARCACIÓN" data-bs-toggle="prints" data-bs-target="">
+                    <img src="../img/PRINT.png" alt="HOLA" data-bs-toggle="prints" data-bs-target="">
                     <div class="card-body">
                         <p class="card-text">Impresión fine art enmarcada</p>
                         <p class="lead precio">$5000</p>
@@ -85,6 +83,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </main>
 
