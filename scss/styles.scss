@@ -47,6 +47,13 @@ body {
             }
         }
 
+        .porfolio-title {
+            text-align: center;
+            width: 50%;
+            font-size: x-large;
+            margin: 20px auto;
+        }
+
         .porfoliocards {
             margin: 50px 10px;
             display: grid;
@@ -130,50 +137,6 @@ body {
                     }
 
                 }
-
-                .contenedor-prints-all {
-
-                    .contenedor-prints {
-
-                        .card {
-
-                            .card-header {
-                                background-color: $secondary;
-                                color: $primary;
-                                font-style: $font-type;
-                            }
-
-                        }
-
-                        img {
-                            width: auto;
-                            max-width: 200px;
-                            height: 150px;
-                            object-fit: cover;
-                        }
-
-                        h4 {
-                            font-weight: 600;
-                            font-size: 16px;
-                            font-weight: 300;
-                        }
-
-                        p {
-                            padding: 0 1rem;
-                        }
-
-
-                    }
-                }
-            }
-
-            @media screen and (min-width: 768px) {
-                margin: 50px 10px;
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-                grid-column-gap: 10px;
-                grid-row-gap: 10px;
             }
         }
 
@@ -324,143 +287,83 @@ body {
                 }
             }
         }
-    }
 
-    .contenedor-contacto-all {
-        .form-container {
-            margin: 30px auto 50px auto;
-            padding: 50px;
-            max-width: 500px;
-            max-height: 600px;
-            display: flex;
-            flex-direction: column;
-            color: $primary-light;
-            background-color: $primary;
-            gap: 10px;
-            text-align: center;
-            border: 2px $primary;
-            box-shadow: $shadow;
 
-            h2 {
-                font-size: 28px;
-
-                @media screen and (max-width: 420px) {
-                    font-size: 22px;
-
-                }
-            }
-
-            .form-enviar {
-                background-color: $secondary;
-                border-radius: 10px;
-                width: 100px;
-                border: 1px solid $primary;
-
-                &:hover {
-                    box-shadow: $shadow;
-                    border: $primary-light 1px solid;
-
-                }
-            }
-        }
-    }
-
-    .contenedor-bio-all {
-        margin: 30px auto 20px auto;
-        width: 300px;
-        max-width: 350px;
-        background-color: $primary;
-        border: 3px $secondary solid;
-        display: flex;
-        flex-direction: column;
-        box-shadow: $shadow;
-
-        img {
-            padding-top: 50px;
-            margin: 0 auto;
-            max-width: 200px;
-            height: auto;
-        }
-
-        .contenedor-bio {
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            padding: 20px;
-
-            .biografia {
-                margin: 0 auto;
-                padding: 10px;
-                max-width: 300px;
-
-                h1 {
-                    text-align: center;
-                    font-size: larger;
-                    color: $secondary;
-                }
-
-                p {
-                    width: 220px;
-                    text-align: justify;
-                    font-size: small;
-                    color: $primary-light;
-                }
-            }
-
-            .publicaciones {
-                width: 220px;
-                margin: 0 auto;
-                max-width: 200px;
+        .contenedor-contacto-all {
+            .form-container {
+                margin: 30px auto 50px auto;
+                padding: 50px;
+                max-width: 500px;
+                max-height: 600px;
+                display: flex;
+                flex-direction: column;
+                color: $primary-light;
+                background-color: $primary;
+                gap: 10px;
+                text-align: center;
+                border: 2px $primary;
+                box-shadow: $shadow;
 
                 h2 {
-                    text-align: center;
-                    font-size: larger;
-                    color: $secondary;
+                    font-size: 28px;
+
+                    @media screen and (max-width: 420px) {
+                        font-size: 22px;
+
+                    }
                 }
 
-                ol {
-                    text-align: center;
-                    font-size: small;
-                    color: $primary-light;
-                    list-style-type: none;
+                .form-enviar {
+                    background-color: $secondary;
+                    border-radius: 10px;
+                    width: 100px;
+                    border: 1px solid $primary;
 
-                    li {
-                        font-style: italic;
-                        gap: 10px;
+                    &:hover {
+                        box-shadow: $shadow;
+                        border: $primary-light 1px solid;
 
-                        span {
-                            color: $secondary;
-                        }
                     }
                 }
             }
-
-
         }
 
-        @media screen and (min-width:568px) {
+        .contenedor-bio-all {
             margin: 30px auto 20px auto;
-            width: auto;
-            max-width: 800px;
-            height: auto;
+            width: 300px;
+            max-width: 350px;
+            background-color: $primary;
+            border: 3px $secondary solid;
+            display: flex;
+            flex-direction: column;
+            box-shadow: $shadow;
+
+            img {
+                padding-top: 50px;
+                margin: 0 auto;
+                max-width: 200px;
+                height: auto;
+            }
 
             .contenedor-bio {
-                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
 
                 .biografia {
-                    justify-content: center;
-                    width: auto;
-                    max-width: 600px;
+                    margin: 0 auto;
+                    padding: 10px;
+                    max-width: 300px;
 
-                    h2 {
+                    h1 {
                         text-align: center;
                         font-size: larger;
                         color: $secondary;
                     }
 
                     p {
-                        margin: 0 auto;
-                        width: auto;
+                        width: 220px;
                         text-align: justify;
                         font-size: small;
                         color: $primary-light;
@@ -468,10 +371,9 @@ body {
                 }
 
                 .publicaciones {
-                    width: 400px;
+                    width: 220px;
                     margin: 0 auto;
-                    padding: 10px;
-                    max-width: 550px;
+                    max-width: 200px;
 
                     h2 {
                         text-align: center;
@@ -484,7 +386,6 @@ body {
                         font-size: small;
                         color: $primary-light;
                         list-style-type: none;
-                        padding-left: 0;
 
                         li {
                             font-style: italic;
@@ -497,12 +398,75 @@ body {
                     }
                 }
 
+
             }
+
+            @media screen and (min-width:568px) {
+                margin: 30px auto 20px auto;
+                width: auto;
+                max-width: 800px;
+                height: auto;
+
+                .contenedor-bio {
+                    width: 100%;
+
+                    .biografia {
+                        justify-content: center;
+                        width: auto;
+                        max-width: 600px;
+
+                        h2 {
+                            text-align: center;
+                            font-size: larger;
+                            color: $secondary;
+                        }
+
+                        p {
+                            margin: 0 auto;
+                            width: auto;
+                            text-align: justify;
+                            font-size: small;
+                            color: $primary-light;
+                        }
+                    }
+
+                    .publicaciones {
+                        width: 400px;
+                        margin: 0 auto;
+                        padding: 10px;
+                        max-width: 550px;
+
+                        h2 {
+                            text-align: center;
+                            font-size: larger;
+                            color: $secondary;
+                        }
+
+                        ol {
+                            text-align: center;
+                            font-size: small;
+                            color: $primary-light;
+                            list-style-type: none;
+                            padding-left: 0;
+
+                            li {
+                                font-style: italic;
+                                gap: 10px;
+
+                                span {
+                                    color: $secondary;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
         }
 
+
     }
-
-
 
     footer {
         background-color: $primary;
@@ -515,22 +479,23 @@ body {
         position: absolute;
 
         .footer-all {
-            height: 200px;
+            max-height: 200px;
             width: 100%;
             margin: 0 auto;
-            padding: 0 auto;
             display: flex;
             flex-direction: column;
 
+            @media screen and (max-width:351px) {
+                height: 250px;
+                margin-bottom: 0 !important;
+            }
+
             h2 {
-                font-size: small;
+                font-size: medium;
                 text-align: center;
                 color: $secondary-grey;
                 padding: 15px;
 
-                @media screen and (min-width:255px) {
-                    font-size: small;
-                }
 
                 @media screen and (min-width:568px) {
                     font-size: x-large;
@@ -539,12 +504,20 @@ body {
 
             .copy {
                 flex-direction: column;
-                max-width: 320px;
+                max-width: 600px;
                 height: auto;
                 max-height: 200px;
                 margin: 10px auto;
                 position: sticky;
                 padding-top: 20px;
+
+                @media screen and (min-width:255px) {
+                    max-width: 150px;
+                }
+
+                @media screen and (min-width:468px) {
+                    max-width: 400px;
+                }
 
                 p {
                     font-size: xx-small;
@@ -552,28 +525,26 @@ body {
                     text-align: center;
                 }
 
-                @media screen and (max-width:351px) {
-                    max-width: 150px;
-                }
+
             }
-        }
 
-        .contenedor-redes {
-            height: 60px;
-            margin: 0 auto;
-            width: 150px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            .contenedor-redes {
+                height: 60px;
+                margin: 0 auto;
+                width: 150px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
 
-            .icon-redes {
-                color: $secondary-grey;
-                height: 15px;
-                width: 15px;
+                .icon-redes {
+                    color: $secondary-grey;
+                    height: 15px;
+                    width: 15px;
 
-                &:hover {
-                    box-shadow: $shadow;
-                    color: $secondary;
+                    &:hover {
+                        box-shadow: $shadow;
+                        color: $secondary;
+                    }
                 }
             }
         }

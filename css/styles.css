@@ -32,6 +32,12 @@ body {
       margin-bottom: 20px;
       text-align: center;
       color: #E9EBF8; }
+  html main .porfolio-title,
+  body main .porfolio-title {
+    text-align: center;
+    width: 50%;
+    font-size: x-large;
+    margin: 20px auto; }
   html main .porfoliocards,
   body main .porfoliocards {
     margin: 50px 10px;
@@ -110,34 +116,6 @@ body {
           html main .porfoliocards .tarjeta a,
           body main .porfoliocards .tarjeta a {
             padding: 0 0 20px 20px; } }
-      html main .porfoliocards .tarjeta .contenedor-prints-all .contenedor-prints .card .card-header,
-      body main .porfoliocards .tarjeta .contenedor-prints-all .contenedor-prints .card .card-header {
-        background-color: #FC9F5B;
-        color: #1D1D1D;
-        font-style: "Montserrat", sans-serif; }
-      html main .porfoliocards .tarjeta .contenedor-prints-all .contenedor-prints img,
-      body main .porfoliocards .tarjeta .contenedor-prints-all .contenedor-prints img {
-        width: auto;
-        max-width: 200px;
-        height: 150px;
-        object-fit: cover; }
-      html main .porfoliocards .tarjeta .contenedor-prints-all .contenedor-prints h4,
-      body main .porfoliocards .tarjeta .contenedor-prints-all .contenedor-prints h4 {
-        font-weight: 600;
-        font-size: 16px;
-        font-weight: 300; }
-      html main .porfoliocards .tarjeta .contenedor-prints-all .contenedor-prints p,
-      body main .porfoliocards .tarjeta .contenedor-prints-all .contenedor-prints p {
-        padding: 0 1rem; }
-    @media screen and (min-width: 768px) {
-      html main .porfoliocards,
-      body main .porfoliocards {
-        margin: 50px 10px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px; } }
   html main .contenedor-prints-all,
   body main .contenedor-prints-all {
     width: 100%;
@@ -254,8 +232,8 @@ body {
           gap: 10px;
           width: auto;
           max-width: 250px; } }
-  html .contenedor-contacto-all .form-container,
-  body .contenedor-contacto-all .form-container {
+  html main .contenedor-contacto-all .form-container,
+  body main .contenedor-contacto-all .form-container {
     margin: 30px auto 50px auto;
     padding: 50px;
     max-width: 500px;
@@ -268,25 +246,25 @@ body {
     text-align: center;
     border: 2px #1D1D1D;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); }
-    html .contenedor-contacto-all .form-container h2,
-    body .contenedor-contacto-all .form-container h2 {
+    html main .contenedor-contacto-all .form-container h2,
+    body main .contenedor-contacto-all .form-container h2 {
       font-size: 28px; }
       @media screen and (max-width: 420px) {
-        html .contenedor-contacto-all .form-container h2,
-        body .contenedor-contacto-all .form-container h2 {
+        html main .contenedor-contacto-all .form-container h2,
+        body main .contenedor-contacto-all .form-container h2 {
           font-size: 22px; } }
-    html .contenedor-contacto-all .form-container .form-enviar,
-    body .contenedor-contacto-all .form-container .form-enviar {
+    html main .contenedor-contacto-all .form-container .form-enviar,
+    body main .contenedor-contacto-all .form-container .form-enviar {
       background-color: #FC9F5B;
       border-radius: 10px;
       width: 100px;
       border: 1px solid #1D1D1D; }
-      html .contenedor-contacto-all .form-container .form-enviar:hover,
-      body .contenedor-contacto-all .form-container .form-enviar:hover {
+      html main .contenedor-contacto-all .form-container .form-enviar:hover,
+      body main .contenedor-contacto-all .form-container .form-enviar:hover {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
         border: #E9E6FF 1px solid; }
-  html .contenedor-bio-all,
-  body .contenedor-bio-all {
+  html main .contenedor-bio-all,
+  body main .contenedor-bio-all {
     margin: 30px auto 20px auto;
     width: 300px;
     max-width: 350px;
@@ -295,108 +273,108 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); }
-    html .contenedor-bio-all img,
-    body .contenedor-bio-all img {
+    html main .contenedor-bio-all img,
+    body main .contenedor-bio-all img {
       padding-top: 50px;
       margin: 0 auto;
       max-width: 200px;
       height: auto; }
-    html .contenedor-bio-all .contenedor-bio,
-    body .contenedor-bio-all .contenedor-bio {
+    html main .contenedor-bio-all .contenedor-bio,
+    body main .contenedor-bio-all .contenedor-bio {
       margin: 0 auto;
       display: flex;
       flex-direction: column;
       padding: 20px; }
-      html .contenedor-bio-all .contenedor-bio .biografia,
-      body .contenedor-bio-all .contenedor-bio .biografia {
+      html main .contenedor-bio-all .contenedor-bio .biografia,
+      body main .contenedor-bio-all .contenedor-bio .biografia {
         margin: 0 auto;
         padding: 10px;
         max-width: 300px; }
-        html .contenedor-bio-all .contenedor-bio .biografia h1,
-        body .contenedor-bio-all .contenedor-bio .biografia h1 {
+        html main .contenedor-bio-all .contenedor-bio .biografia h1,
+        body main .contenedor-bio-all .contenedor-bio .biografia h1 {
           text-align: center;
           font-size: larger;
           color: #FC9F5B; }
-        html .contenedor-bio-all .contenedor-bio .biografia p,
-        body .contenedor-bio-all .contenedor-bio .biografia p {
+        html main .contenedor-bio-all .contenedor-bio .biografia p,
+        body main .contenedor-bio-all .contenedor-bio .biografia p {
           width: 220px;
           text-align: justify;
           font-size: small;
           color: #E9E6FF; }
-      html .contenedor-bio-all .contenedor-bio .publicaciones,
-      body .contenedor-bio-all .contenedor-bio .publicaciones {
+      html main .contenedor-bio-all .contenedor-bio .publicaciones,
+      body main .contenedor-bio-all .contenedor-bio .publicaciones {
         width: 220px;
         margin: 0 auto;
         max-width: 200px; }
-        html .contenedor-bio-all .contenedor-bio .publicaciones h2,
-        body .contenedor-bio-all .contenedor-bio .publicaciones h2 {
+        html main .contenedor-bio-all .contenedor-bio .publicaciones h2,
+        body main .contenedor-bio-all .contenedor-bio .publicaciones h2 {
           text-align: center;
           font-size: larger;
           color: #FC9F5B; }
-        html .contenedor-bio-all .contenedor-bio .publicaciones ol,
-        body .contenedor-bio-all .contenedor-bio .publicaciones ol {
+        html main .contenedor-bio-all .contenedor-bio .publicaciones ol,
+        body main .contenedor-bio-all .contenedor-bio .publicaciones ol {
           text-align: center;
           font-size: small;
           color: #E9E6FF;
           list-style-type: none; }
-          html .contenedor-bio-all .contenedor-bio .publicaciones ol li,
-          body .contenedor-bio-all .contenedor-bio .publicaciones ol li {
+          html main .contenedor-bio-all .contenedor-bio .publicaciones ol li,
+          body main .contenedor-bio-all .contenedor-bio .publicaciones ol li {
             font-style: italic;
             gap: 10px; }
-            html .contenedor-bio-all .contenedor-bio .publicaciones ol li span,
-            body .contenedor-bio-all .contenedor-bio .publicaciones ol li span {
+            html main .contenedor-bio-all .contenedor-bio .publicaciones ol li span,
+            body main .contenedor-bio-all .contenedor-bio .publicaciones ol li span {
               color: #FC9F5B; }
     @media screen and (min-width: 568px) {
-      html .contenedor-bio-all,
-      body .contenedor-bio-all {
+      html main .contenedor-bio-all,
+      body main .contenedor-bio-all {
         margin: 30px auto 20px auto;
         width: auto;
         max-width: 800px;
         height: auto; }
-        html .contenedor-bio-all .contenedor-bio,
-        body .contenedor-bio-all .contenedor-bio {
+        html main .contenedor-bio-all .contenedor-bio,
+        body main .contenedor-bio-all .contenedor-bio {
           width: 100%; }
-          html .contenedor-bio-all .contenedor-bio .biografia,
-          body .contenedor-bio-all .contenedor-bio .biografia {
+          html main .contenedor-bio-all .contenedor-bio .biografia,
+          body main .contenedor-bio-all .contenedor-bio .biografia {
             justify-content: center;
             width: auto;
             max-width: 600px; }
-            html .contenedor-bio-all .contenedor-bio .biografia h2,
-            body .contenedor-bio-all .contenedor-bio .biografia h2 {
+            html main .contenedor-bio-all .contenedor-bio .biografia h2,
+            body main .contenedor-bio-all .contenedor-bio .biografia h2 {
               text-align: center;
               font-size: larger;
               color: #FC9F5B; }
-            html .contenedor-bio-all .contenedor-bio .biografia p,
-            body .contenedor-bio-all .contenedor-bio .biografia p {
+            html main .contenedor-bio-all .contenedor-bio .biografia p,
+            body main .contenedor-bio-all .contenedor-bio .biografia p {
               margin: 0 auto;
               width: auto;
               text-align: justify;
               font-size: small;
               color: #E9E6FF; }
-          html .contenedor-bio-all .contenedor-bio .publicaciones,
-          body .contenedor-bio-all .contenedor-bio .publicaciones {
+          html main .contenedor-bio-all .contenedor-bio .publicaciones,
+          body main .contenedor-bio-all .contenedor-bio .publicaciones {
             width: 400px;
             margin: 0 auto;
             padding: 10px;
             max-width: 550px; }
-            html .contenedor-bio-all .contenedor-bio .publicaciones h2,
-            body .contenedor-bio-all .contenedor-bio .publicaciones h2 {
+            html main .contenedor-bio-all .contenedor-bio .publicaciones h2,
+            body main .contenedor-bio-all .contenedor-bio .publicaciones h2 {
               text-align: center;
               font-size: larger;
               color: #FC9F5B; }
-            html .contenedor-bio-all .contenedor-bio .publicaciones ol,
-            body .contenedor-bio-all .contenedor-bio .publicaciones ol {
+            html main .contenedor-bio-all .contenedor-bio .publicaciones ol,
+            body main .contenedor-bio-all .contenedor-bio .publicaciones ol {
               text-align: center;
               font-size: small;
               color: #E9E6FF;
               list-style-type: none;
               padding-left: 0; }
-              html .contenedor-bio-all .contenedor-bio .publicaciones ol li,
-              body .contenedor-bio-all .contenedor-bio .publicaciones ol li {
+              html main .contenedor-bio-all .contenedor-bio .publicaciones ol li,
+              body main .contenedor-bio-all .contenedor-bio .publicaciones ol li {
                 font-style: italic;
                 gap: 10px; }
-                html .contenedor-bio-all .contenedor-bio .publicaciones ol li span,
-                body .contenedor-bio-all .contenedor-bio .publicaciones ol li span {
+                html main .contenedor-bio-all .contenedor-bio .publicaciones ol li span,
+                body main .contenedor-bio-all .contenedor-bio .publicaciones ol li span {
                   color: #FC9F5B; } }
   html footer,
   body footer {
@@ -410,22 +388,22 @@ body {
     position: absolute; }
     html footer .footer-all,
     body footer .footer-all {
-      height: 200px;
+      max-height: 200px;
       width: 100%;
       margin: 0 auto;
-      padding: 0 auto;
       display: flex;
       flex-direction: column; }
+      @media screen and (max-width: 351px) {
+        html footer .footer-all,
+        body footer .footer-all {
+          height: 250px;
+          margin-bottom: 0 !important; } }
       html footer .footer-all h2,
       body footer .footer-all h2 {
-        font-size: small;
+        font-size: medium;
         text-align: center;
         color: #E9EBF8;
         padding: 15px; }
-        @media screen and (min-width: 255px) {
-          html footer .footer-all h2,
-          body footer .footer-all h2 {
-            font-size: small; } }
         @media screen and (min-width: 568px) {
           html footer .footer-all h2,
           body footer .footer-all h2 {
@@ -433,35 +411,39 @@ body {
       html footer .footer-all .copy,
       body footer .footer-all .copy {
         flex-direction: column;
-        max-width: 320px;
+        max-width: 600px;
         height: auto;
         max-height: 200px;
         margin: 10px auto;
         position: sticky;
         padding-top: 20px; }
+        @media screen and (min-width: 255px) {
+          html footer .footer-all .copy,
+          body footer .footer-all .copy {
+            max-width: 150px; } }
+        @media screen and (min-width: 468px) {
+          html footer .footer-all .copy,
+          body footer .footer-all .copy {
+            max-width: 400px; } }
         html footer .footer-all .copy p,
         body footer .footer-all .copy p {
           font-size: xx-small;
           color: #FC9F5B;
           text-align: center; }
-        @media screen and (max-width: 351px) {
-          html footer .footer-all .copy,
-          body footer .footer-all .copy {
-            max-width: 150px; } }
-    html footer .contenedor-redes,
-    body footer .contenedor-redes {
-      height: 60px;
-      margin: 0 auto;
-      width: 150px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-      html footer .contenedor-redes .icon-redes,
-      body footer .contenedor-redes .icon-redes {
-        color: #E9EBF8;
-        height: 15px;
-        width: 15px; }
-        html footer .contenedor-redes .icon-redes:hover,
-        body footer .contenedor-redes .icon-redes:hover {
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-          color: #FC9F5B; }
+      html footer .footer-all .contenedor-redes,
+      body footer .footer-all .contenedor-redes {
+        height: 60px;
+        margin: 0 auto;
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        html footer .footer-all .contenedor-redes .icon-redes,
+        body footer .footer-all .contenedor-redes .icon-redes {
+          color: #E9EBF8;
+          height: 15px;
+          width: 15px; }
+          html footer .footer-all .contenedor-redes .icon-redes:hover,
+          body footer .footer-all .contenedor-redes .icon-redes:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            color: #FC9F5B; }
